@@ -9,7 +9,7 @@ const ProjectCards = ({image, alt, text, liveDemo, githubLink}) => {
       <h4>Lorem ipsum dolor sit amet.</h4>
       </div>
 
-      <div className='flex flex-row p-3 items-center justify-between'>
+      <div className='flex flex-row p-3 items-center justify-between bg-gray-400'>
         <Link to={liveDemo} >
         <button className="bg-yellow-500 rounded-lg p-3"> liveDemo</button>
         </Link>

@@ -5,7 +5,19 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+          'gradient' : 'gradient 3s linear infinite',
+      },
+      fontFamily: {
+        'erel': ['Poppins', 'sans-serif']
+      },
+      keyframes: {
+        'gradient' : {
+          to: { 'background-position': '200% center' },
+        }
+      }
+    },
   },
   plugins: [],
 }

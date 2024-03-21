@@ -5,10 +5,10 @@ import { IoMdClose } from "react-icons/io";
 
 
 let LinkItems = [
-    {name: "Home", link: "home"},
-    {name: "about", link: "about"},
-    {name: "services", link: "services"},
-    {name: "contact", link: "#contact"}
+    {name: "Home", link: "#home"},
+    {name: "skills", link: "#skills"},
+    {name: "projects", link: "#projects"},
+    {name: "socials", link: "#socials"}
 ];
 
 
