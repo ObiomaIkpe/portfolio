@@ -1,4 +1,10 @@
 import React from 'react'
+import { FaHashnode, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
+import { BsTwitterX } from "react-icons/bs";
+import { SlSocialLinkedin } from "react-icons/sl";
+
+
+
 import Navbar from '../components/Navbar'
 import ComFooter from '../components/Footer'
 
@@ -22,12 +28,14 @@ const Home = () => {
 
         {/* dev right */}
         <div className='flex flex-col items-center justify-center p-4'>
-        <p className='text-sm md:text-xl'>Hello, I am Anthony-Ikpe.</p>
-        <p className='text-sm md:text-xl'>I do not just build projects,</p> 
-        <p> I pay attention to details. </p>
-        <p>building scalable and efficient software is something that thrills me. </p>
-        <p className='text-sm md:text-xl'>An application that is exciting to users,</p>
-        <p> and a developer that is equally enthusiatic about building it, that's what I'm all about.</p>
+        <p className='text-sm md:text-xl pb-2'>Hello, I am Anthony-Ikpe.</p>
+
+        <button className='text-white bg-black rounded-full px-4 py-2'>
+        <a href='#socials'>
+          Connect+
+          </a>
+        </button>
+        
         </div>
         
     </div>
@@ -83,19 +91,40 @@ const Home = () => {
 
 
       {/* Skills,  */}
-      <div className='flex  items-center justify-center h-screen mx-auto'>
-        <div>skills</div>
+      <div className='flex  flex-col mx-auto p-3 items-center justify-center'>
+        <div className='text-lg p-3 m-2'>Languages, Tools &amp; Frameworks</div>
 
-        <div>
-          
+
+      <div className='grid grid-cols-1 w-2/3 gap-4'>
+        <div className='border border-black-900 h-60'>
+          <ul className='p-3 grid grid-cols-2 sm:grid-cols-3 h-full'>
+            <li>Javascript </li>
+            <li>Express</li>
+            <li>Postman</li>
+            <li>React</li>
+            <li>Mongoose</li>
+            <li>Tailwind</li>
+            <li>Python</li>
+            <li>Docker</li>
+          </ul>
+        </div>  
         </div>
-
       </div>
 
 
       {/* Socials */}
-      <div>
+      <div id='socials' className='p-3 flex flex-col justify-center'>
+      <h2 className='flex items-center justify-center text-3xl p-2'>Socials</h2>
+      {/* social platforms */}
+      <div className='flex flex-row justify-evenly p-3'>
+      <FaWhatsapp className='text-2xl text-green-700'/>
+      <BsTwitterX className='text-2xl'/>
+      <FaLinkedin className='text-2xl text-cyan-800'/>
+      </div>
 
+      <h4 className="p-3 border border-solid">In my spare time, I write about topics that I find interesting on <a href='#' className='text-blue-600'>hashnode.</a></h4>
+      {/* brief intro */}
+      <div className='p-3'>I'm not just a coder; I'm a craftsman. I thrive on building efficient, scalable software that excites users. Let's collaborate on something truly remarkable.</div>
       </div>
 
 

@@ -5,7 +5,8 @@
 @tailwind utilities;
 
 body{
-    font-family: 'Poppins';
+  font-family: 'Poppins';
   font-weight: 600;
-
+  max-width: 1440px;
+  /* background-color: rgba(0, 0, 0, 0.884); */
 }
